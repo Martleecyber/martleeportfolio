@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+</head>
+<body>
+    <nav>
+        <div class="logo">5</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact" class="contact-button">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <div class="header">
+        <h1>
+            <span class="animate-text">I'm a</span><br>
+            <span class="animate-text main-text">Full Stack<br>Software Developer.</span>
+        </h1>
+        <button class="previous-projects">Previous Projects</button>
+    </div>
+
+    <div class="about-me">
+        <div class="about-content" id="about">
+            <h2>About Me</h2>
+            <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+            <div class="buttons">
+                <button class="btn hire-me">Hire Me</button>
+                <button class="btn resume">Resume</button>
+            </div>
+        </div>
+    </div>
+    <section id="portfolio-section" class="portfolio">
+        <h2>Portfolio</h2>
+        <div class="tabs">
+            <button class="tab active" data-tab="mobile-app">Mobile App</button>
+            <button class="tab" data-tab="website">Website</button>
+            <button class="tab" data-tab="desktop">Desktop</button>
+            <button class="tab" data-tab="other-projects">Other Projects</button>
+        </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <h3>Project 1</h3>
+                    <h4>Dating Mobile App Design</h4>
+                    <p>Lorem ipsum is simply dummy text of the printing and typesetting industry...</p>
+                    <a href="#" class="read-more">Read more</a>
+                </div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <h3>Project 2</h3>
+                    <h4>Website Design</h4>
+                    <p>Lorem ipsum is simply dummy text of the printing and typesetting industry...</p>
+                    <a href="#" class="read-more">Read more</a>
+                </div>
+                <!-- Add more slides as needed -->
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!-- Portfolio Section End -->
+    <!-- Include Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
